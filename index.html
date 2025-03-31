@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
+
 <body>
-    
+
 </body>
-</html><!DOCTYPE html>
+
+</html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="dashboard">
-    <div class="sidebar">
-        <h2>Dashboard</h2>
-        <ul>
-            <li>Overview</li>
-            <li>Sales</li>
-            <li>Customers</li>
-            <li>Reports</li>
-        </ul>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="/">Overview</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="/all-transaction.html">All Transaction</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Sales Dashboard</h1>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Total Sales</h3>
+                    <p id="total-sales">$0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>New Customers</h3>
+                    <p id="new-customers">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Orders</h3>
+                    <p id="orders">0</p>
+                </div>
+            </div>
+
+            <div class="recent-transactions">
+                <h2>Recent Transactions</h2>
+                <ul id="transactions-list"></ul>
+            </div>
+
+            <div class="transaction-form">
+                <h2>Add Transaction</h2>
+                <form id="transaction-form">
+                    <input type="text" id="customer-name" placeholder="Customer Name" required>
+                    <input type="number" id="transaction-amount" placeholder="Transaction Amount" required>
+                    <button type="submit">Add Transaction</button>
+                </form>
+            </div>
+        </div>
     </div>
-
-    <div class="main-content">
-        <h1>Sales Dashboard</h1>
-
-        <div class="stats">
-            <div class="stat-box">
-                <h3>Total Sales</h3>
-                <p id="total-sales">$0</p>
-            </div>
-            <div class="stat-box">
-                <h3>New Customers</h3>
-                <p id="new-customers">0</p>
-            </div>
-            <div class="stat-box">
-                <h3>Orders</h3>
-                <p id="orders">0</p>
-            </div>
-        </div>
-
-        <div class="recent-transactions">
-            <h2>Recent Transactions</h2>
-            <ul id="transactions-list"></ul>
-        </div>
-
-        <div class="transaction-form">
-            <h2>Add Transaction</h2>
-            <form id="transaction-form">
-                <input type="text" id="customer-name" placeholder="Customer Name" required>
-                <input type="number" id="transaction-amount" placeholder="Transaction Amount" required>
-                <button type="submit">Add Transaction</button>
-            </form>
-        </div>
-    </div>
-</div>
     <script src="app.js"></script>
 </body>
+
 </html>
